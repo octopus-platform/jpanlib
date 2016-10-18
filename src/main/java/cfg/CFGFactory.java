@@ -330,7 +330,8 @@ public class CFGFactory
 					.entrySet())
 			{
 				// Skip labels that aren't for switch statements.
-				if (!block.getKey().matches("^(case|default).*")) {
+				if (!block.getKey().matches("^(case|default).*"))
+				{
 					nonCaseLabels.put(block.getKey(), block.getValue());
 					continue;
 				}
